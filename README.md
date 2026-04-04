@@ -65,9 +65,14 @@ mo-gov/
 ├── outreach-pipeline.json    ← 9-stage CRM schema with Airtable config + engagement tracking
 ├── senate-mail-merge.csv     ← Print-ready CSV for all 34 senators (Avery 5160 / Word merge)
 ├── bill-tracking.md          ← Bill tracking templates for all 7 campaigns + session dates
+├── personalization-map.md    ← Senator → campaign, letter variant, committee hook
+├── pipeline-emails.md        ← Email templates for all 7 pipeline stage transitions
 │
-│── TOOLS
-└── validate-legislators.sh   ← Data quality checks (districts, rooms, phones, freshness)
+│── TOOLS & CONFIG
+├── validate-legislators.sh   ← Data quality checks (districts, rooms, phones, freshness)
+├── bill-monitor-setup.md     ← Setup guide for daily bill monitoring agent
+├── CLAUDE.md                 ← Project instructions for Claude Code sessions
+└── .claude/                  ← SessionStart hook + settings
 ```
 
 ---
