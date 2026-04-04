@@ -41,13 +41,33 @@ A professional, non-partisan toolkit for orchestrating legislative engagement an
 mo-gov/
 ├── README.md                 ← You are here
 ├── SKILL.md                  ← Master skill definition (task router, all 11 modules, guardrails)
-├── mo-legislators.md         ← Senate + House roster with leadership and St. Louis metro focus
+│
+│── REFERENCE DATA
+├── mo-legislators.md         ← Senate roster (34 senators) with rooms, phones, leadership
+├── mo-house-roster.md        ← House roster (163 reps) with leadership and committee chairs
 ├── mo-committees.md          ← Committee relevance mapping (Tier 1-3) for advocacy campaigns
+├── senate-committees.md      ← Full Senate committee membership with chairs/vice-chairs
+│
+│── TEMPLATES & LETTERS
 ├── advocacy-letter.md        ← Letter templates with {{variable}} mail merge syntax
-├── address-labels.md         ← Avery 5160 labels + CSV schema + envelope format
-├── drop-off-packet.md        ← Capitol delivery checklist, scripts, and follow-up workflow
+├── campaign-letters.md       ← 6 Access To campaign letter variants (Justice/Education/Health/Safety/Jobs/Housing)
+├── tier1-cover-letters.md    ← 9 personalized Tier 1 senator letters, ready to print
 ├── policy-brief.md           ← One-pager templates for CoTrackPro + Access To campaigns
-└── outreach-pipeline.json    ← 9-stage pipeline schema with Airtable CRM config
+├── address-labels.md         ← Avery 5160 labels + CSV schema + envelope format
+│
+│── TRIP PLANNING
+├── delivery-route.md         ← Prioritized hit list with floor-by-floor walking route
+├── drop-off-packet.md        ← Assembly checklist, delivery script, log template, follow-up
+├── talking-points-card.md    ← Pocket cheat sheet: 30-sec intro, stats, objection handling
+├── calendar-events.md        ← Capitol visit + follow-up email/call schedule
+│
+│── PIPELINE & TRACKING
+├── outreach-pipeline.json    ← 9-stage CRM schema with Airtable config + engagement tracking
+├── senate-mail-merge.csv     ← Print-ready CSV for all 34 senators (Avery 5160 / Word merge)
+├── bill-tracking.md          ← Bill tracking templates for all 7 campaigns + session dates
+│
+│── TOOLS
+└── validate-legislators.sh   ← Data quality checks (districts, rooms, phones, freshness)
 ```
 
 ---
