@@ -1,9 +1,13 @@
 # Missouri Legislators Reference
 ## 103rd General Assembly · 2nd Regular Session (2026)
 
+> **Last verified**: April 4, 2026
+> **Data source**: senate.mo.gov, house.mo.gov
+> **Next review due**: Before any mail campaign — verify room numbers and leadership roles
+>
 > **IMPORTANT**: This file was compiled from official Missouri General Assembly
-> directories (senate.mo.gov, house.mo.gov) as of April 2026. Legislator data
-> changes — always verify against official sources before sending correspondence.
+> directories (senate.mo.gov, house.mo.gov). Legislator data
+> changes during session — always verify against official sources before sending correspondence.
 >
 > **Official lookup tools**:
 > - Senate: https://senate.mo.gov/LegisLookup/Default.aspx

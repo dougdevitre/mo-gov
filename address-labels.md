@@ -1,6 +1,9 @@
 # Address Labels & Mail Merge Template
 ## For Missouri Legislative Outreach
 
+> **Last verified**: April 2026
+> **Template variable syntax**: `{{variable_name}}` — compatible with Word mail merge, Google Sheets, and Avery label software
+
 ---
 
 ## LABEL FORMAT: AVERY 5160 (30 per sheet)
@@ -9,9 +12,9 @@ Standard label dimensions: 1" x 2-5/8" (25.4mm x 66.7mm)
 
 ### Recipient label format
 ```
-The Honorable [First] [Last]
-Missouri [State Senate / House of Representatives]
-201 W. Capitol Ave., Rm. [Room]
+The Honorable {{first_name}} {{last_name}}
+Missouri {{chamber}}
+201 W. Capitol Ave., Rm. {{room_number}}
 Jefferson City, MO 65101
 ```
 
@@ -19,7 +22,7 @@ Jefferson City, MO 65101
 ```
 Doug Devitre
 CoTrackPro
-[Street Address]
+{{return_street_address}}
 Swansea, IL 62226
 ```
 
@@ -65,15 +68,15 @@ title,first_name,last_name,full_salutation,chamber,room,address_line_1,address_l
 ```
 Doug Devitre
 CoTrackPro
-[Street Address]
+{{return_street_address}}
 Swansea, IL 62226
 ```
 
 ### Recipient (center)
 ```
-The Honorable [First] [Last]
-Missouri [State Senate / House of Representatives]
-201 W. Capitol Ave., Rm. [Room]
+The Honorable {{first_name}} {{last_name}}
+Missouri {{chamber}}
+201 W. Capitol Ave., Rm. {{room_number}}
 Jefferson City, MO 65101
 ```
 
@@ -87,10 +90,10 @@ Jefferson City, MO 65101
 4. **Select Recipients** → Use an Existing List → Select your CSV file
 5. **Insert Merge Fields**:
    ```
-   The Honorable «first_name» «last_name»
-   «chamber»
-   «address_line_1», «address_line_2»
-   «city», «state» «zip»
+   The Honorable {{first_name}} {{last_name}}
+   {{chamber}}
+   {{address_line_1}}, {{address_line_2}}
+   {{city}}, {{state}} {{zip}}
    ```
 6. **Preview Results** → verify formatting
 7. **Finish & Merge** → Print Documents

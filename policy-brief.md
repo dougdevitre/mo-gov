@@ -1,6 +1,9 @@
 # Policy Brief / One-Pager Templates
 ## For Missouri Legislative Outreach
 
+> **Last verified**: April 2026
+> **Template variable syntax**: `{{variable_name}}`
+
 ---
 
 ## TEMPLATE A: COTRACKPRO ONE-PAGER
@@ -62,36 +65,34 @@ cotrackpro.com
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ACCESS TO [JUSTICE / EDUCATION / HEALTH / JOBS / HOUSING / SAFETY]
+ACCESS TO {{campaign}}
 Open Civic Technology for Missouri
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 THE CHALLENGE
 
-[2-3 sentences with Missouri-specific data about the problem
-this campaign addresses. Use state-level statistics, cite
-Missouri agencies or reports where possible.]
+{{challenge_description}}
 
 THE SOLUTION
 
-Access To [Campaign] is an open-source civic technology tool
-that [WHAT IT DOES in 2-3 sentences]. It is designed for
-[WHO USES IT] and built with [KEY PRINCIPLES].
+Access To {{campaign}} is an open-source civic technology tool
+that {{product_description}}. It is designed for
+{{target_audience}} and built with {{design_principles}}.
 
 Key capabilities:
-  • [Capability 1]
-  • [Capability 2]
-  • [Capability 3]
+  • {{capability_1}}
+  • {{capability_2}}
+  • {{capability_3}}
 
 MISSOURI ALIGNMENT
 
-  • [State plan, statute, or initiative this supports]
-  • [State agency or program this complements]
-  • [Missouri-specific deployment detail]
+  • {{state_plan_alignment}}
+  • {{state_agency_alignment}}
+  • {{missouri_deployment_detail}}
 
 THE ASK
 
-  • [Specific, actionable request]
+  • {{specific_ask}}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Doug Devitre | Founder, Access To Initiative

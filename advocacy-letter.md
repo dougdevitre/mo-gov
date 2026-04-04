@@ -1,26 +1,27 @@
 # Advocacy Letter Template
 ## Missouri Legislative Outreach
 
+> **Last verified**: April 2026
+> **Template variable syntax**: `{{variable_name}}` — compatible with Word mail merge, Google Docs, and label software
+
 ---
 
 ## STANDARD LETTER FORMAT
 
 ```
-[DATE]
+{{date}}
 
-The Honorable [FULL_NAME]
-Missouri [STATE_SENATE / HOUSE_OF_REPRESENTATIVES]
-201 W. Capitol Ave., Rm. [ROOM_NUMBER]
+The Honorable {{full_name}}
+Missouri {{chamber}}
+201 W. Capitol Ave., Rm. {{room_number}}
 Jefferson City, MO 65101
 
-Dear [SENATOR / REPRESENTATIVE] [LAST_NAME]:
+Dear {{salutation}} {{last_name}}:
 
 [PARAGRAPH 1 — INTRODUCTION]
-My name is [SENDER_NAME], [TITLE] of [ORGANIZATION], based in
-[CITY], Missouri. I am writing to [REQUEST: bring to your attention /
-request a meeting / share information about] [TOPIC] — a [BRIEF
-DESCRIPTION] that directly impacts Missouri families [in your district /
-across the state].
+My name is {{sender_name}}, {{sender_title}} of {{organization}}, based in
+{{city}}, Missouri. I am writing to {{request_type}} {{topic}} — a {{brief_description}}
+that directly impacts Missouri families {{district_scope}}.
 
 [PARAGRAPH 2 — THE PROBLEM]
 [Missouri-specific data about the problem. Example frameworks:]
@@ -32,35 +33,33 @@ across the state].
 - "[Missouri-specific statistic or trend that connects to the solution]."
 
 [PARAGRAPH 3 — THE SOLUTION]
-[ORGANIZATION / PRODUCT] is a [TYPE: platform / tool / initiative] that
-[WHAT IT DOES in plain language]. It serves [WHO: co-parents, family law
-attorneys, school counselors, etc.] by providing [KEY CAPABILITIES].
-[PRODUCT] is designed to be [child-centered / trauma-informed /
-court-ready / accessible] and [DIFFERENTIATOR].
+{{organization}} is a {{product_type}} that {{product_description}}. It serves
+{{target_audience}} by providing {{key_capabilities}}.
+{{product_name}} is designed to be {{design_principles}} and {{differentiator}}.
 
 [PARAGRAPH 4 — THE ASK]
-I respectfully request [SPECIFIC ASK]:
+I respectfully request {{specific_ask}}:
 - "...the opportunity to provide a brief demonstration for you or your
   staff at your convenience."
-- "...your consideration of [TOPIC] as the [COMMITTEE] reviews
-  legislation related to [SUBJECT AREA]."
-- "...your support for [INITIATIVE / BILL / PILOT PROGRAM]."
-- "...a 15-minute meeting to discuss how [PRODUCT] could support
-  [STATE PROGRAM / INITIATIVE]."
+- "...your consideration of {{topic}} as the {{committee_name}} reviews
+  legislation related to {{subject_area}}."
+- "...your support for {{initiative}}."
+- "...a 15-minute meeting to discuss how {{product_name}} could support
+  {{state_program}}."
 
 [PARAGRAPH 5 — CLOSING]
-I have enclosed [a one-page overview / additional materials] for your
-reference. I am available at your convenience and would welcome the
-opportunity to discuss this further. Thank you for your service to
-Missouri families [and to the residents of District [NUMBER]].
+I have enclosed {{enclosure_description}} for your reference. I am available
+at your convenience and would welcome the opportunity to discuss this further.
+Thank you for your service to Missouri families and to the residents of
+District {{district_number}}.
 
 Respectfully,
 
-[SENDER_NAME]
-[TITLE]
-[ORGANIZATION]
-[PHONE] | [EMAIL]
-[WEBSITE]
+{{sender_name}}
+{{sender_title}}
+{{organization}}
+{{sender_phone}} | {{sender_email}}
+{{sender_website}}
 ```
 
 ---
@@ -68,14 +67,14 @@ Respectfully,
 ## VARIANT: COTRACKPRO INTRODUCTION LETTER
 
 ```
-[DATE]
+{{date}}
 
-The Honorable [FULL_NAME]
-Missouri [CHAMBER]
-201 W. Capitol Ave., Rm. [ROOM]
+The Honorable {{full_name}}
+Missouri {{chamber}}
+201 W. Capitol Ave., Rm. {{room_number}}
 Jefferson City, MO 65101
 
-Dear [TITLE] [LAST_NAME]:
+Dear {{salutation}} {{last_name}}:
 
 My name is Doug Devitre, founder and CEO of CoTrackPro, a child-centered
 documentation and safety platform based in the St. Louis area. I am
@@ -119,20 +118,20 @@ cotrackpro.com
 ## VARIANT: ACCESS TO INITIATIVE LETTER
 
 ```
-[DATE]
+{{date}}
 
-The Honorable [FULL_NAME]
-Missouri [CHAMBER]
-201 W. Capitol Ave., Rm. [ROOM]
+The Honorable {{full_name}}
+Missouri {{chamber}}
+201 W. Capitol Ave., Rm. {{room_number}}
 Jefferson City, MO 65101
 
-Dear [TITLE] [LAST_NAME]:
+Dear {{salutation}} {{last_name}}:
 
 My name is Doug Devitre, and I lead a family of open-source civic
 technology projects called the "Access To" initiative, based in the
 St. Louis area. I am writing to share how these tools are designed to
 support Missouri residents in areas that align with your committee's
-work on [COMMITTEE_TOPIC].
+work on {{committee_topic}}.
 
 [CUSTOMIZE BASED ON CAMPAIGN]:
 - Access To Justice: "Thousands of Missourians navigate the legal system
@@ -148,13 +147,11 @@ work on [COMMITTEE_TOPIC].
 - Access To Safety: "Children and families affected by domestic violence
   need trauma-informed tools to document their experiences..."
 
-The Access To [CAMPAIGN] project is an open-source tool that [WHAT IT
-DOES]. It is designed for [WHO USES IT] and built with [PRINCIPLES:
-trauma-informed design, child-centered approach, Missouri-specific
-compliance, etc.].
+The Access To {{campaign}} project is an open-source tool that {{product_description}}.
+It is designed for {{target_audience}} and built with {{design_principles}}.
 
 I would welcome the chance to discuss how this initiative could support
-the goals of the [COMMITTEE NAME] and benefit Missouri residents. I am
+the goals of the {{committee_name}} and benefit Missouri residents. I am
 available for a brief meeting or demonstration at your convenience.
 
 Respectfully,

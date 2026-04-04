@@ -169,9 +169,61 @@
     },
     "notes": {
       "type": "string"
+    },
+    "total_touches": {
+      "type": "integer",
+      "min": 0,
+      "description": "Total number of contact attempts across all channels"
+    },
+    "response_received": {
+      "type": "boolean",
+      "description": "Whether any response has been received from the office"
+    },
+    "response_date": {
+      "type": "date",
+      "format": "YYYY-MM-DD",
+      "description": "Date of first response from legislator or staff"
+    },
+    "response_sentiment": {
+      "type": "enum",
+      "values": ["positive", "neutral", "negative", "no_response"],
+      "description": "Overall tone of response received"
+    },
+    "days_to_response": {
+      "type": "integer",
+      "description": "Days between first contact and first response (auto-calculated)"
+    },
+    "meeting_outcome": {
+      "type": "enum",
+      "values": ["not_applicable", "demo_given", "follow_up_requested", "referred_to_staff", "referred_to_committee", "declined", "champion_identified"],
+      "description": "Outcome of meeting if Stage 5+ reached"
+    },
+    "follow_up_count": {
+      "type": "integer",
+      "min": 0,
+      "description": "Number of follow-up contacts after initial outreach"
+    },
+    "engagement_score": {
+      "type": "integer",
+      "min": 0,
+      "max": 100,
+      "description": "Composite engagement score: touches (20%) + response speed (20%) + sentiment (30%) + stage progression (30%)"
+    },
+    "contact_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": "YYYY-MM-DD",
+          "type": "letter|email|call|visit|hearing|event",
+          "summary": "string",
+          "response": "boolean"
+        }
+      },
+      "description": "Chronological log of all contact attempts and responses"
     }
   },
-  "csv_header": "legislator_name,chamber,district,party,committees,leadership_role,relevance_score,relevance_tags,priority_tier,pipeline_stage,capitol_office_room,capitol_phone,email,staff_contact_name,staff_contact_email,last_contact_date,last_contact_type,last_contact_notes,next_action,next_action_date,campaign_tags,notes",
+  "csv_header": "legislator_name,chamber,district,party,committees,leadership_role,relevance_score,relevance_tags,priority_tier,pipeline_stage,capitol_office_room,capitol_phone,email,staff_contact_name,staff_contact_email,last_contact_date,last_contact_type,last_contact_notes,next_action,next_action_date,campaign_tags,notes,total_touches,response_received,response_date,response_sentiment,days_to_response,meeting_outcome,follow_up_count,engagement_score",
   "example_rows": [
     {
       "legislator_name": "Sen. Cindy O'Laughlin",
@@ -195,7 +247,16 @@
       "next_action": "Research committee interests and recent bills",
       "next_action_date": "",
       "campaign_tags": ["cotrackpro"],
-      "notes": "As President Pro Tem, controls committee appointments. High-value relationship."
+      "notes": "As President Pro Tem, controls committee appointments. High-value relationship.",
+      "total_touches": 0,
+      "response_received": false,
+      "response_date": "",
+      "response_sentiment": "no_response",
+      "days_to_response": null,
+      "meeting_outcome": "not_applicable",
+      "follow_up_count": 0,
+      "engagement_score": 0,
+      "contact_history": []
     }
   ],
   "airtable_config": {
@@ -227,6 +288,24 @@
         "name": "House Only",
         "type": "grid",
         "filter": "chamber = 'House'"
+      },
+      {
+        "name": "Engagement Dashboard",
+        "type": "grid",
+        "sort": "engagement_score DESC",
+        "fields": ["legislator_name", "pipeline_stage", "total_touches", "response_sentiment", "engagement_score", "last_contact_date"]
+      },
+      {
+        "name": "Awaiting Response",
+        "type": "grid",
+        "filter": "response_received = false AND total_touches > 0",
+        "sort": "last_contact_date ASC"
+      },
+      {
+        "name": "Champions & Sponsors",
+        "type": "grid",
+        "filter": "pipeline_stage >= 6 AND pipeline_stage <= 7",
+        "sort": "engagement_score DESC"
       }
     ]
   }

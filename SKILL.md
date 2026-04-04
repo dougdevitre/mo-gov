@@ -454,7 +454,51 @@ Respectfully submitted,
   Representative). Address legislators respectfully regardless of party or position.
 - **Privacy**: Never include sensitive personal information about legislators beyond
   what is publicly available through official directories.
-- **Lobbyist registration**: Remind users that Missouri law (RSMo 105.470) requires
-  registration as a legislative lobbyist if engaging in certain activities for
-  compensation. Suggest consulting with legal counsel if their advocacy activities
-  may require registration. This is educational information, not legal advice.
+- **Lobbyist registration**: Missouri law requires registration as a legislative
+  lobbyist under certain conditions. See the compliance checklist below. This is
+  educational information, not legal advice — consult legal counsel for your
+  specific situation.
+
+---
+
+## COMPLIANCE CHECKLIST: MISSOURI LOBBYIST REGISTRATION
+
+> **Statute**: RSMo 105.470–105.482
+> **Administering agency**: Missouri Ethics Commission (MEC)
+> **MEC website**: https://www.mec.mo.gov
+> **This is educational information, not legal advice.**
+
+### Who must register?
+
+Under RSMo 105.470, a "lobbyist" is any person who:
+1. Acts for the **purpose of attempting to influence** legislative action
+2. Does so **in the regular course of employment or business** (i.e., for compensation)
+
+### You likely DO need to register if:
+- [ ] You are **paid** to contact legislators on behalf of a client or employer
+- [ ] You make **expenditures** on behalf of legislators (meals, travel, events)
+- [ ] You are employed by an organization that **regularly engages** in legislative advocacy
+- [ ] You act as a **designated representative** for a company or trade association
+
+### You likely DO NOT need to register if:
+- [ ] You are a **private citizen** contacting your own legislators about personal concerns
+- [ ] You provide **unpaid, volunteer** advocacy for a cause
+- [ ] You are **testifying at a public hearing** when invited or on your own behalf
+- [ ] You are a **news media** representative covering legislative activity
+
+### Key requirements for registered lobbyists:
+1. **Registration**: File with the Missouri Ethics Commission before beginning lobbying
+2. **Reporting**: File periodic expenditure reports (monthly during session, quarterly otherwise)
+3. **Gift restrictions**: Missouri limits gifts to legislators — generally, no gifts of
+   substantial value. Meals and travel are reportable expenditures
+4. **Penalties**: Failure to register can result in fines and criminal penalties
+
+### Practical guidance for CoTrackPro / Access To advocacy:
+- If Doug Devitre or team members are conducting outreach **as part of their regular
+  business duties** and contacting legislators to influence legislation, registration
+  may be required
+- Dropping off informational materials and requesting meetings **may** constitute
+  lobbying if done regularly as part of compensated work
+- **When in doubt, register** — the registration process is straightforward and the
+  cost of non-compliance is high
+- Consult with a Missouri attorney familiar with ethics law for a definitive answer
