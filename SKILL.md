@@ -53,16 +53,86 @@ Always verify data against `references/mo-legislators.md` before generating outp
 Before generating ANY output involving legislator names, districts, offices, or
 committee assignments, load and cross-reference:
 
-1. `references/mo-legislators.md` — Full roster with names, districts, party, Capitol
-   office rooms, phone numbers, and committee assignments
-2. `references/mo-committees.md` — Committee descriptions, jurisdiction, and relevance
-   mapping to CoTrackPro / Access To campaign topics
-3. `schemas/outreach-pipeline.json` — Pipeline stage definitions and CRM schema
-4. `templates/` — Letter, label, packet, and brief templates
+### Reference data
+1. `mo-legislators.md` — Senate roster (34 senators) with rooms, phones, leadership
+2. `mo-house-roster.md` — House roster (163 reps) with leadership and committee chairs
+3. `mo-committees.md` — Committee-to-topic relevance mapping (Tier 1-3)
+4. `senate-committees.md` — Full Senate committee membership with chairs/vice-chairs
+
+### Templates & letters
+5. `advocacy-letter.md` — 3 letter templates (standard, CoTrackPro, Access To)
+6. `campaign-letters.md` — 6 Access To campaign variants (Justice/Education/Health/Safety/Jobs/Housing)
+7. `tier1-cover-letters.md` — 9 personalized Tier 1 letters, ready to print
+8. `policy-brief.md` — One-pager templates for CoTrackPro + Access To campaigns
+9. `address-labels.md` — Avery 5160 labels + CSV schema + envelope format
+
+### Trip planning
+10. `delivery-route.md` — Prioritized hit list with floor-by-floor walking route
+11. `drop-off-packet.md` — Assembly checklist, delivery script, log, follow-up workflow
+12. `talking-points-card.md` — Pocket cheat sheet for Capitol visits
+13. `calendar-events.md` — Visit day + follow-up email/call schedule
+
+### Pipeline & tracking
+14. `outreach-pipeline.json` — 9-stage CRM schema with Airtable config + engagement tracking
+15. `senate-mail-merge.csv` — Print-ready CSV for all 34 senators
+16. `bill-tracking.md` — Bill tracking templates for all 7 campaigns
+17. `personalization-map.md` — Master reference: senator → hook, campaign, letter variant
+
+### Tools
+18. `validate-legislators.sh` — Run before any mail campaign to check data quality
+
+### Connected services (via MCP)
+- **Airtable**: "MO-Gov Legislators" table in JTA Content & Outreach Pipeline base
+  - 34 senator records with pipeline stages, engagement tracking, committee assignments
+  - Use for real-time pipeline updates, delivery logging, follow-up scheduling
+- **Gmail**: 8 Tier 1 follow-up email drafts pre-loaded in Drafts folder
+  - Generate new drafts for any pipeline stage transition
+- **Canva**: 4 CoTrackPro one-pager designs saved to account
+  - Edit and export as PDF for printing
+- **Google Calendar**: Requires re-authorization for write access
 
 **CRITICAL**: If a legislator is not found in the reference files, search the web
 using `https://senate.mo.gov/Senators` or `https://house.mo.gov/MemberRoster.aspx`
 before generating output. Never guess.
+
+---
+
+## WORKFLOW AUTOMATIONS
+
+These workflows chain multiple tools and files together. Trigger by asking
+for any of these operations:
+
+### "Generate letters for [target group]"
+1. Load `personalization-map.md` to get each senator's best campaign + hook
+2. Select the right template from `campaign-letters.md` or `advocacy-letter.md`
+3. Fill `{{variables}}` with senator data from `mo-legislators.md`
+4. Output formatted letters ready to print
+
+### "Update pipeline after my visit"
+1. Ask which senators were visited and what happened at each office
+2. Update Airtable records: pipeline stage, last_contact_date/type, staff_contact, notes
+3. Generate Gmail follow-up drafts for each senator visited
+4. Set next_action and next_action_date in Airtable
+
+### "Who should I contact next?"
+1. Query Airtable for senators by pipeline stage and next_action_date
+2. Cross-reference with `senate-committees.md` for committee hearing dates
+3. Prioritize by: overdue follow-ups → Tier 1 with no response → Tier 2 ready for next touch
+4. Output a prioritized action list with phone numbers and talking points
+
+### "Prepare materials for [senator/committee/campaign]"
+1. Look up senator in `personalization-map.md`
+2. Generate personalized cover letter using the right campaign variant
+3. Generate Avery label using `senate-mail-merge.csv` data
+4. Reference the CoTrackPro one-pager in Canva for printing
+5. Output a drop-off packet checklist from `drop-off-packet.md`
+
+### "Track a bill"
+1. User provides bill number or topic
+2. Add to appropriate campaign section in `bill-tracking.md`
+3. Cross-reference committee assignment with `senate-committees.md`
+4. Identify which senators to target based on committee membership
+5. Generate talking points connecting the bill to CoTrackPro/Access To
 
 ---
 

@@ -23,48 +23,48 @@ All Senate correspondence:
 
 Senate switchboard: (573) 751-3824
 
-| District | Senator | Room | Notes |
-|---|---|---|---|
-| 1 | Sen. Doug Beck | — | St. Louis County |
-| 2 | Sen. Nick Schroer | — | St. Charles County area |
-| 3 | Sen. Mike Henderson | — | |
-| 4 | Sen. Karla May | — | St. Louis City |
-| 5 | Sen. Steven Roberts | — | St. Louis City |
-| 6 | Sen. Mike Bernskoetter | — | Central MO / Cole County area |
-| 7 | Sen. David Lewis | — | |
-| 8 | Sen. Mike Cierpiot | — | Jackson County / Eastern Jackson |
-| 9 | Sen. Barbara Washington | — | Kansas City |
-| 10 | Sen. Crystal Fitzwater | — | |
-| 11 | Sen. Alesia Nicola | — | |
-| 12 | Sen. Ben Black | — | |
-| 13 | Sen. Angela Mosley | — | St. Louis County |
-| 14 | Sen. Brian Williams | — | St. Louis County |
-| 15 | Sen. Elaine Gregory | — | |
-| 16 | Sen. Ben Brown | — | |
-| 17 | Sen. Holly Nurrenbern | — | |
-| 18 | Sen. Cindy O'Laughlin | — | President Pro Tem · Shelbina area |
-| 19 | Sen. Caleb Webber | — | |
-| 20 | Sen. Curtis Trent | — | Assistant Majority Floor Leader |
-| 21 | Sen. David Gregory | — | |
-| 22 | Sen. Brandon Coleman | — | |
-| 23 | Sen. Ryan Schnelting | — | |
-| 24 | Sen. Tracy McCreery | — | St. Louis County |
-| 25 | Sen. Justin Bean | — | |
-| 26 | Sen. Jason Brown | — | Majority Caucus Chairman |
-| 27 | Sen. Brad Burger | — | |
-| 28 | Sen. Sandy Crawford | — | |
-| 29 | Sen. Mike Moon | — | |
-| 30 | Sen. Lincoln Hough | — | Springfield |
-| 31 | Sen. Rick Brattin | — | |
-| 32 | Sen. Jill Carter | — | Majority Caucus Whip |
-| 33 | Sen. Jason Hudson | — | |
-| 34 | Sen. Tony Luetkemeyer | — | Majority Floor Leader |
+| District | Senator | Room | Phone | Notes |
+|---|---|---|---|---|
+| 1 | Sen. Doug Beck | 333 | (573) 751-0220 | St. Louis County |
+| 2 | Sen. Nick Schroer | 227 | (573) 751-1282 | St. Charles County area |
+| 3 | Sen. Mike Henderson | 431 | (573) 751-4008 | |
+| 4 | Sen. Karla May | 225 | (573) 751-3599 | St. Louis City |
+| 5 | Sen. Steven Roberts | 434 | (573) 751-4415 | St. Louis City |
+| 6 | Sen. Mike Bernskoetter | 416 | (573) 751-2076 | Central MO / Cole County area |
+| 7 | Sen. Patty Lewis | 425 | (573) 751-6607 | |
+| 8 | Sen. Mike Cierpiot | 422 | (573) 751-1464 | Jackson County / Eastern Jackson |
+| 9 | Sen. Barbara Washington | 425 | (573) 751-3158 | Kansas City |
+| 10 | Sen. Travis Fitzwater | 418 | (573) 751-2757 | May be departing — verify status |
+| 11 | Sen. Joe Nicola | 226 | (573) 751-3074 | |
+| 12 | Sen. Rusty Black | 420 | (573) 751-1415 | |
+| 13 | Sen. Angela Mosley | 421 | (573) 751-2420 | St. Louis County |
+| 14 | Sen. Brian Williams | 428A | (573) 751-4106 | St. Louis County |
+| 15 | Sen. David Gregory | 331 | (573) 751-5568 | |
+| 16 | Sen. Justin Brown | 423 | (573) 751-5713 | |
+| 17 | Sen. Maggie Nurrenbern | 330 | (573) 751-5282 | |
+| 18 | Sen. Cindy O'Laughlin | 326 | (573) 751-7985 | President Pro Tem · Shelbina area |
+| 19 | Sen. Stephen Webber | 329 | (573) 751-3931 | |
+| 20 | Sen. Curtis Trent | 323 | (573) 751-1503 | Assistant Majority Floor Leader |
+| 21 | Sen. Kurtis Gregory | 433A | (573) 751-4302 | |
+| 22 | Sen. Mary Elizabeth Coleman | 331A | (573) 751-1492 | |
+| 23 | Sen. Adam Schnelting | 219 | (573) 751-1141 | |
+| 24 | Sen. Tracy McCreery | 427 | (573) 751-9762 | St. Louis County |
+| 25 | Sen. Jason Bean | 321 | (573) 751-4843 | |
+| 26 | Sen. Ben Brown | 430 | (573) 751-3678 | Majority Caucus Chairman |
+| 27 | Sen. Jamie Burger | 334 | (573) 751-2459 | |
+| 28 | Sen. Sandy Crawford | 319 | (573) 751-8793 | |
+| 29 | Sen. Mike Moon | 220 | (573) 751-1480 | |
+| 30 | Sen. Lincoln Hough | 419 | (573) 751-1311 | Springfield |
+| 31 | Sen. Rick Brattin | 331 | (573) 751-2108 | |
+| 32 | Sen. Jill Carter | 320 | (573) 751-2173 | Majority Caucus Whip |
+| 33 | Sen. Brad Hudson | 426 | (573) 751-1882 | |
+| 34 | Sen. Tony Luetkemeyer | 332 | (573) 751-2183 | Majority Floor Leader |
 
 ### Senate Leadership (103rd GA)
 - **President Pro Tem**: Sen. Cindy O'Laughlin (District 18)
 - **Majority Floor Leader**: Sen. Tony Luetkemeyer (District 34)
 - **Assistant Majority Floor Leader**: Sen. Curtis Trent (District 20)
-- **Majority Caucus Chairman**: Sen. Ben Brown (District 26) [note: corrected per 2026 updates]
+- **Majority Caucus Chairman**: Sen. Ben Brown (District 26)
 - **Majority Caucus Whip**: Sen. Jill Carter (District 32)
 
 > **NOTE ON ROOM NUMBERS**: Senate room numbers change. Before printing labels,
@@ -137,7 +137,7 @@ Missouri operations focus on the MO side), these are the key local senators:
 | St. Louis County (north) | Sen. Brian Williams | 14 |
 | St. Louis County | Sen. Angela Mosley | 13 |
 | St. Charles County area | Sen. Nick Schroer | 2 |
-| St. Charles / Lincoln | Sen. Ryan Schnelting | 23 |
+| St. Charles / Lincoln | Sen. Adam Schnelting | 23 |
 
 > For House members in the St. Louis metro, use the legislator lookup tool
 > with your specific Missouri address.
