@@ -1,7 +1,7 @@
 # Bill Tracking Templates
 ## 103rd General Assembly · 2026 Session
 
-> **Last updated**: April 4, 2026
+> **Last updated**: April 4, 2026 — **22 bills tracked**
 > **Purpose**: Track bills relevant to CoTrackPro and Access To campaigns through the legislative process.
 
 ---
@@ -74,103 +74,194 @@ Bills related to family court, custody, documentation, court technology.
 - Child welfare, child safety, protective orders
 - Trauma-informed, evidence-based
 
-### Active bills
-<!-- Add bills as discovered using the template above -->
-<!-- Search: https://www.senate.mo.gov/BillTracking/Bills/BillSearch/ -->
-<!-- Search: https://legiscan.com/MO -->
+### Active bills (12 bills)
 
-_No bills currently tracked. Use the search terms above to discover relevant bills._
+### HB 2505 — Grandparent Priority in Third-Party Custody ⚡
+- **Sponsor**: Rep. Dolan (House)
+- **Committee**: Senate Judiciary (after passing House)
+- **Status**: Engrossed — public hearing April 8 in Senate Lounge
+- **CoTrackPro relevance**: Grandparents given statutory priority in third-party custody
+- **Campaign**: CoTrackPro
+- **Target senators**: Schroer (Chair), D. Gregory (VC), May, Roberts, Coleman
+
+### SB 1531 — Modifying Child Custody and Visitation Orders
+- **Sponsor**: Republican senator (verify at senate.mo.gov)
+- **Committee**: Senate Judiciary
+- **Status**: In committee — hearing conducted March 11
+- **CoTrackPro relevance**: New provisions for custody/visitation modifications
+
+### SB 1013 — Modifies Provisions Relating to Child Custody
+- **Sponsor**: Democratic senator (verify)
+- **Committee**: Senate Judiciary
+- **Status**: In committee
+- **CoTrackPro relevance**: Modifies child custody provisions
+
+### SB 1010 — Child Protection, Abuse, and Endangering ⚡
+- **Sponsor**: Sen. Joe Nicola (District 11)
+- **Committee**: Senate Families, Seniors and Health
+- **Status**: In committee
+- **CoTrackPro relevance**: Expands mandatory reporter list; protects reporters from retaliation
+- **Target senators**: Carter (Chair), Nicola (sponsor/VC), Lewis, Roberts, Nurrenbern
+
+### HB 3451 — Recording of Child Abuse/Neglect Interviews ⚡
+- **Committee**: House (Do Pass voted March 24)
+- **Status**: Advancing — Do Pass from committee
+- **CoTrackPro relevance**: Requires recording of all child abuse/neglect interviews
+
+### HB 1770 — Statute of Limitations for Child Abuse ⚡
+- **Sponsor**: Rep. Brian Seitz (R-156) and others
+- **Status**: Passed House March 11 — heading to Senate
+- **CoTrackPro relevance**: Extends SOL from age 31 to 41 for child abuse survivors
+- **Campaign**: Access To Justice
+
+### HB 3442 — Reports of Child Abuse or Neglect
+- **Status**: Introduced — read second time Feb 26
+- **CoTrackPro relevance**: New provisions for handling abuse/neglect reports
+
+### HB 2901 — Joint Committee on Child Abuse and Neglect
+- **Committee**: House Rules - Administrative
+- **Status**: In committee — executive session March 4
+
+### SB 1707 — Child Abuse and Neglect Modifications
+- **Status**: Introduced Feb 23
+
+### HB 3289 — Court Operations, Automation, and Electronic Records ⚡
+- **Sponsor**: Rep. Cameron Bunting Parker (R-150, Judiciary Chair)
+- **Committee**: House Rules - Administrative
+- **Status**: In committee (referred April 2)
+- **CoTrackPro relevance**: Major court modernization — electronic records, Court Automation Fund, PII handling
+
+### HB 2658 — Electronic Communications ⚡
+- **Sponsor**: Bipartisan (R-2, D-1)
+- **Status**: Passed House Third Read April 2 — heading to Senate
+- **CoTrackPro relevance**: Modifies electronic communications framework
+
+### HB 3007 — DV Training for Mental Health Licensure
+- **Sponsor**: Rep. Renee Reuter (R-112)
+- **Status**: Has received committee votes
+- **CoTrackPro relevance**: Requires DV coursework for therapist/counselor licensure
 
 ---
 
 ## ACCESS TO JUSTICE — LEGAL AID & COURT ACCESS
 
-Bills related to legal aid, pro se litigants, court access, civil procedure.
-
 ### Search terms
 - Legal aid, pro se, self-represented litigant
 - Court access, filing fees, court costs
-- Civil procedure, small claims, mediation
-- Legal services, public defender
 
 ### Active bills
-_No bills currently tracked._
+
+_No standalone legal aid bills identified in 2026 session. Provisions may appear in HB 3289 (court operations) or appropriations. Continue monitoring._
 
 ---
 
 ## ACCESS TO EDUCATION — K-12 SAFETY & SUPPORT
 
-Bills related to school safety, IEP, school counselors, child welfare in schools.
-
 ### Search terms
 - School safety, school counselor, student mental health
 - IEP, 504 plan, special education
 - Child abuse reporting, mandatory reporter
-- School discipline, restorative justice
 
-### Active bills
-_No bills currently tracked._
+### Active bills (3 bills)
+
+### SB 886 — Keep Our Schools Safe Act
+- **Status**: Introduced
+- **CoTrackPro relevance**: Creates school safety standards and protections
+
+### SB 1014 — Jason Flatt/Avery Reine Cantor Act and School Mental Health
+- **Committee**: Senate Education
+- **Status**: In committee (referred Jan 8)
+- **CoTrackPro relevance**: Modifies suicide prevention training; modifies mental health in schools
+- **Target senators**: Brattin (Chair), Hudson (VC), Schroer, Henderson, O'Laughlin
+
+### SB 966 — School Safety Assessments for St. Louis City/County
+- **Status**: Introduced
+- **CoTrackPro relevance**: Requires DESE safety assessments at all STL City/County schools — local relevance
 
 ---
 
 ## ACCESS TO HEALTH — SDOH & BEHAVIORAL HEALTH
 
-Bills related to social determinants of health, community health workers, behavioral health.
-
 ### Search terms
 - Social determinants of health, community health worker
 - Behavioral health, mental health parity
-- MO HealthNet, Medicaid, managed care
-- Substance abuse, opioid, naloxone
-- Telehealth, remote patient monitoring
 
 ### Active bills
-_No bills currently tracked._
+
+_No standalone SDOH bills identified. SB 1014 (school mental health) and HB 3007 (DV training) have health crossover. Continue monitoring._
 
 ---
 
 ## ACCESS TO JOBS — WORKFORCE & WIOA
 
-Bills related to workforce development, WIOA, job training.
-
 ### Search terms
 - Workforce development, WIOA, job training
 - Missouri Job Center, apprenticeship
-- Reentry, formerly incarcerated, barrier populations
-- SNAP employment, TANF work requirements
 
-### Active bills
-_No bills currently tracked._
+### Active bills (3 bills)
+
+### HB 1628 — Dept of Higher Education and Workforce Development ⚡
+- **Sponsor**: Rep. Willard Haley (R-58)
+- **Status**: Passed House 153-0 — in Senate Education Committee
+- **CoTrackPro relevance**: Modifies workforce development department structure; bipartisan
+- **Target senators**: Brattin (Education Chair), Hudson (Education VC)
+
+### SB 1370 — Workforce Diploma Program and Adult Virtual Education ⚡
+- **Committee**: Senate Education
+- **Status**: Committee Substitute voted Do Pass March 10
+- **CoTrackPro relevance**: Workforce Diploma Program for adult learners
+
+### HB 3473 — Grants for Workforce Training Programs
+- **Status**: Introduced Feb 26
 
 ---
 
 ## ACCESS TO HOUSING — FAIR HOUSING & EVICTION
 
-Bills related to housing stability, eviction prevention, fair housing.
-
 ### Search terms
 - Fair housing, eviction, landlord-tenant
 - Housing assistance, MHDC, affordable housing
-- Homelessness, emergency shelter
-- Property tax, housing discrimination
 
-### Active bills
-_No bills currently tracked._
+### Active bills (2 bills)
+
+### HB 2830 — Missouri Housing Trust Fund Fee Increase
+- **Committee**: House Rules - Administrative
+- **Status**: In committee (referred Feb 18)
+- **CoTrackPro relevance**: Triples Housing Trust Fund fee from $3 to $9 per deed; ~$10M+ annual increase
+
+### SB 1741 — Rental Protections for DV Victims
+- **Status**: Introduced Feb 25
+- **CoTrackPro relevance**: Tenant protections for DV survivors facing eviction
 
 ---
 
 ## ACCESS TO SAFETY — DV & PROTECTIVE ORDERS
 
-Bills related to domestic violence, protective orders, trauma-informed care.
-
 ### Search terms
-- Domestic violence, protective order, full order of protection
-- Stalking, harassment, cyberstalking
-- Victim services, MCADSV, victim advocate
-- Trauma-informed, adverse childhood experiences (ACEs)
+- Domestic violence, protective order, stalking, cyberstalking
+- Victim services, MCADSV, trauma-informed
 
-### Active bills
-_No bills currently tracked._
+### Active bills (4 bills)
+
+### SB 928 — DV, Stalking, No Contact Orders
+- **Committee**: Senate Judiciary — hearing conducted Feb 18
+- **Status**: In committee
+- **CoTrackPro relevance**: AG concurrent jurisdiction for multi-jurisdictional DV; cyberstalking in protective orders; unlawful vehicle tracking offense
+- **Target senators**: Schroer (Chair), D. Gregory (VC), May, Roberts
+
+### HB 3426 — DV, Stalking, No Contact Orders (House Companion)
+- **Sponsor**: Rep. Emily Weber (D-24)
+- **Status**: Read second time Feb 26
+- **CoTrackPro relevance**: House companion to SB 928
+
+### SB 1747 — Cybercrimes, Harassment, and Stalking
+- **Sponsor**: Sen. Tracy McCreery (D-24, St. Louis County)
+- **Status**: Introduced Feb 25
+- **CoTrackPro relevance**: Creates Cybercrimes Survivors' Bill of Rights
+
+### SB 873 — Tax Credit for Housing DV Victims
+- **Status**: Introduced
+- **CoTrackPro relevance**: Tax credit for providing housing to DV victims
 
 ---
 
