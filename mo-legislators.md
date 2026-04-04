@@ -23,42 +23,42 @@ All Senate correspondence:
 
 Senate switchboard: (573) 751-3824
 
-| District | Senator | Room | Notes |
-|---|---|---|---|
-| 1 | Sen. Doug Beck | — | St. Louis County |
-| 2 | Sen. Nick Schroer | — | St. Charles County area |
-| 3 | Sen. Mike Henderson | — | |
-| 4 | Sen. Karla May | — | St. Louis City |
-| 5 | Sen. Steven Roberts | — | St. Louis City |
-| 6 | Sen. Mike Bernskoetter | — | Central MO / Cole County area |
-| 7 | Sen. David Lewis | — | |
-| 8 | Sen. Mike Cierpiot | — | Jackson County / Eastern Jackson |
-| 9 | Sen. Barbara Washington | — | Kansas City |
-| 10 | Sen. Crystal Fitzwater | — | |
-| 11 | Sen. Alesia Nicola | — | |
-| 12 | Sen. Ben Black | — | |
-| 13 | Sen. Angela Mosley | — | St. Louis County |
-| 14 | Sen. Brian Williams | — | St. Louis County |
-| 15 | Sen. Elaine Gregory | — | |
-| 16 | Sen. Ben Brown | — | |
-| 17 | Sen. Holly Nurrenbern | — | |
-| 18 | Sen. Cindy O'Laughlin | — | President Pro Tem · Shelbina area |
-| 19 | Sen. Caleb Webber | — | |
-| 20 | Sen. Curtis Trent | — | Assistant Majority Floor Leader |
-| 21 | Sen. David Gregory | — | |
-| 22 | Sen. Brandon Coleman | — | |
-| 23 | Sen. Ryan Schnelting | — | |
-| 24 | Sen. Tracy McCreery | — | St. Louis County |
-| 25 | Sen. Justin Bean | — | |
-| 26 | Sen. Jason Brown | — | Majority Caucus Chairman |
-| 27 | Sen. Brad Burger | — | |
-| 28 | Sen. Sandy Crawford | — | |
-| 29 | Sen. Mike Moon | — | |
-| 30 | Sen. Lincoln Hough | — | Springfield |
-| 31 | Sen. Rick Brattin | — | |
-| 32 | Sen. Jill Carter | — | Majority Caucus Whip |
-| 33 | Sen. Jason Hudson | — | |
-| 34 | Sen. Tony Luetkemeyer | — | Majority Floor Leader |
+| District | Senator | Room | Phone | Notes |
+|---|---|---|---|---|
+| 1 | Sen. Doug Beck | 333 | (573) 751-0220 | St. Louis County |
+| 2 | Sen. Nick Schroer | 227 | VERIFY | St. Charles County area |
+| 3 | Sen. Mike Henderson | 431 | VERIFY | |
+| 4 | Sen. Karla May | VERIFY | VERIFY | St. Louis City |
+| 5 | Sen. Steven Roberts | VERIFY | VERIFY | St. Louis City |
+| 6 | Sen. Mike Bernskoetter | VERIFY | VERIFY | Central MO / Cole County area |
+| 7 | Sen. David Lewis | 425 | VERIFY | |
+| 8 | Sen. Mike Cierpiot | VERIFY | VERIFY | Jackson County / Eastern Jackson |
+| 9 | Sen. Barbara Washington | 425 | VERIFY | Kansas City |
+| 10 | Sen. Crystal Fitzwater | VERIFY | VERIFY | |
+| 11 | Sen. Alesia Nicola | 226 | VERIFY | |
+| 12 | Sen. Ben Black | 420 | VERIFY | |
+| 13 | Sen. Angela Mosley | VERIFY | VERIFY | St. Louis County |
+| 14 | Sen. Brian Williams | VERIFY | VERIFY | St. Louis County |
+| 15 | Sen. Elaine Gregory | 433 | VERIFY | |
+| 16 | Sen. Ben Brown | VERIFY | VERIFY | |
+| 17 | Sen. Holly Nurrenbern | 330 | VERIFY | |
+| 18 | Sen. Cindy O'Laughlin | 326 | (573) 751-7985 | President Pro Tem · Shelbina area |
+| 19 | Sen. Caleb Webber | 329 | VERIFY | |
+| 20 | Sen. Curtis Trent | VERIFY | VERIFY | Assistant Majority Floor Leader |
+| 21 | Sen. David Gregory | 433 | VERIFY | |
+| 22 | Sen. Brandon Coleman | VERIFY | VERIFY | |
+| 23 | Sen. Ryan Schnelting | 219 | VERIFY | |
+| 24 | Sen. Tracy McCreery | VERIFY | VERIFY | St. Louis County |
+| 25 | Sen. Justin Bean | 321 | VERIFY | |
+| 26 | Sen. Jason Brown | 430 | VERIFY | Majority Caucus Chairman |
+| 27 | Sen. Brad Burger | 334 | VERIFY | |
+| 28 | Sen. Sandy Crawford | 319 | VERIFY | |
+| 29 | Sen. Mike Moon | 220 | VERIFY | |
+| 30 | Sen. Lincoln Hough | 419 | VERIFY | Springfield |
+| 31 | Sen. Rick Brattin | 331 | VERIFY | |
+| 32 | Sen. Jill Carter | 320 | VERIFY | Majority Caucus Whip |
+| 33 | Sen. Jason Hudson | 426 | VERIFY | |
+| 34 | Sen. Tony Luetkemeyer | VERIFY | VERIFY | Majority Floor Leader |
 
 ### Senate Leadership (103rd GA)
 - **President Pro Tem**: Sen. Cindy O'Laughlin (District 18)
