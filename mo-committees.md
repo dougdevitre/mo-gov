@@ -1,6 +1,10 @@
 # Missouri Legislative Committees Reference
 ## Relevance Mapping for CoTrackPro & Access To Ecosystem
 
+> **Last verified**: April 4, 2026
+> **Data source**: senate.mo.gov/Committees, house.mo.gov/Committees
+> **Next review due**: Before targeting a specific committee — verify chair, members, and hearing schedule
+
 ---
 
 ## SENATE STANDING COMMITTEES

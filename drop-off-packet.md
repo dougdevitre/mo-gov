@@ -1,6 +1,9 @@
 # Capitol Drop-Off Packet Template
 ## Assembly & Delivery Checklist
 
+> **Last verified**: April 2026
+> **Template variable syntax**: `{{variable_name}}`
+
 ---
 
 ## PACKET CONTENTS (per legislator)
@@ -28,8 +31,8 @@
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 For the Office of
-[Senator / Representative] [Full Name]
-District [Number]
+{{salutation}} {{full_name}}
+District {{district_number}}
 
 From: Doug Devitre, CoTrackPro
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -42,7 +45,7 @@ From: Doug Devitre, CoTrackPro
 Track each delivery in this format (print or use on phone):
 
 ```
-CAPITOL DROP-OFF LOG — [DATE]
+CAPITOL DROP-OFF LOG — {{date}}
 
 | # | Legislator | Room | Time | Received By | Notes |
 |---|-----------|------|------|-------------|-------|
@@ -143,18 +146,18 @@ a member of the policy staff?"
 
 ### Follow-up email template
 ```
-Subject: Thank you — CoTrackPro materials for [Senator/Rep] [Last Name]
+Subject: Thank you — CoTrackPro materials for {{salutation}} {{last_name}}
 
-Dear [Staff Name / Senator / Representative Last Name],
+Dear {{recipient_name}},
 
 Thank you for taking the time to receive materials from CoTrackPro
-during my visit to the Capitol on [date]. I appreciate your
-[office's / your] work on behalf of Missouri families in District [#].
+during my visit to the Capitol on {{visit_date}}. I appreciate your
+{{office_possessive}} work on behalf of Missouri families in District {{district_number}}.
 
 As shared in the enclosed materials, CoTrackPro is a child-centered
 documentation platform designed to support families and professionals
 navigating co-parenting and family court proceedings. I believe this
-work aligns with the [committee name]'s focus on [topic].
+work aligns with the {{committee_name}}'s focus on {{topic}}.
 
 I would welcome the opportunity to provide a brief demonstration
 at your convenience — in person or virtually. Please don't hesitate
