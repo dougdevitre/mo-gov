@@ -1,0 +1,233 @@
+{
+  "schema_name": "mo-gov-outreach-pipeline",
+  "version": "1.0",
+  "description": "Legislative advocacy pipeline for Missouri General Assembly outreach — CoTrackPro & Access To ecosystem",
+  "stages": [
+    {
+      "stage": 0,
+      "label": "Identified",
+      "description": "Legislator added to target list based on committee relevance, district, or leadership position",
+      "entry_action": "Add to pipeline with relevance score",
+      "exit_criteria": "Background research completed"
+    },
+    {
+      "stage": 1,
+      "label": "Researched",
+      "description": "Committee assignments, voting history, public statements, and staff contacts gathered",
+      "entry_action": "Complete legislator profile card",
+      "exit_criteria": "Personalized letter drafted"
+    },
+    {
+      "stage": 2,
+      "label": "Letter Sent",
+      "description": "First written contact — mailed letter, email, or both",
+      "entry_action": "Send personalized advocacy letter + one-pager",
+      "exit_criteria": "Delivery confirmed or 7 days elapsed"
+    },
+    {
+      "stage": 3,
+      "label": "Packet Delivered",
+      "description": "In-person drop-off at Capitol office or district office",
+      "entry_action": "Deliver packet, log recipient name and timestamp",
+      "exit_criteria": "Follow-up email sent within 48 hours"
+    },
+    {
+      "stage": 4,
+      "label": "Meeting Requested",
+      "description": "Follow-up call or email to schedule a meeting with legislator or staff",
+      "entry_action": "Call Capitol office, send calendar invite",
+      "exit_criteria": "Meeting scheduled or 3 follow-up attempts made"
+    },
+    {
+      "stage": 5,
+      "label": "Meeting Held",
+      "description": "Face-to-face or virtual meeting completed",
+      "entry_action": "Present demo, discuss policy alignment, document commitments",
+      "exit_criteria": "Meeting notes documented, next steps identified"
+    },
+    {
+      "stage": 6,
+      "label": "Champion",
+      "description": "Legislator or staff expresses active interest or support",
+      "entry_action": "Provide additional materials, connect to advisory network",
+      "exit_criteria": "Legislator agrees to take specific action"
+    },
+    {
+      "stage": 7,
+      "label": "Sponsor",
+      "description": "Legislator agrees to sponsor legislation, pilot program, or appropriation request",
+      "entry_action": "Provide draft language, testimony support, fiscal impact data",
+      "exit_criteria": "Bill filed or appropriation request submitted"
+    },
+    {
+      "stage": 8,
+      "label": "Dormant",
+      "description": "No response after 3+ contact attempts across different channels",
+      "entry_action": "Move to periodic re-engagement queue",
+      "exit_criteria": "Re-engage on relevant bill introduction or interim session"
+    }
+  ],
+  "record_schema": {
+    "legislator_name": {
+      "type": "string",
+      "required": true,
+      "description": "Full name with title (e.g., 'Sen. Cindy O\\'Laughlin')"
+    },
+    "chamber": {
+      "type": "enum",
+      "values": ["Senate", "House"],
+      "required": true
+    },
+    "district": {
+      "type": "integer",
+      "required": true,
+      "description": "District number (Senate 1-34, House 1-163)"
+    },
+    "party": {
+      "type": "enum",
+      "values": ["R", "D", "I"],
+      "required": true
+    },
+    "committees": {
+      "type": "array",
+      "items": "string",
+      "description": "List of committee assignments"
+    },
+    "leadership_role": {
+      "type": "string",
+      "description": "e.g., 'President Pro Tem', 'Majority Floor Leader', 'Committee Chair'"
+    },
+    "relevance_score": {
+      "type": "integer",
+      "min": 1,
+      "max": 5,
+      "description": "1=low, 5=highest alignment with advocacy goals"
+    },
+    "relevance_tags": {
+      "type": "array",
+      "items": "string",
+      "description": "e.g., ['family-law', 'child-welfare', 'education', 'workforce', 'tech-innovation']"
+    },
+    "priority_tier": {
+      "type": "enum",
+      "values": ["Tier 1", "Tier 2", "Tier 3"],
+      "description": "Outreach priority based on scoring framework"
+    },
+    "pipeline_stage": {
+      "type": "integer",
+      "min": 0,
+      "max": 8,
+      "description": "Current stage in outreach pipeline"
+    },
+    "capitol_office_room": {
+      "type": "string",
+      "description": "Room number at 201 W. Capitol Ave., Jefferson City, MO 65101"
+    },
+    "capitol_phone": {
+      "type": "string",
+      "description": "Capitol office phone number"
+    },
+    "district_office_address": {
+      "type": "string",
+      "description": "Home district office address if available"
+    },
+    "email": {
+      "type": "string",
+      "description": "Official email — Senate pattern: firstname.lastname@senate.mo.gov"
+    },
+    "staff_contact_name": {
+      "type": "string",
+      "description": "Legislative aide or chief of staff name"
+    },
+    "staff_contact_email": {
+      "type": "string"
+    },
+    "last_contact_date": {
+      "type": "date",
+      "format": "YYYY-MM-DD"
+    },
+    "last_contact_type": {
+      "type": "enum",
+      "values": ["letter", "email", "call", "visit", "hearing", "event"]
+    },
+    "last_contact_notes": {
+      "type": "string",
+      "description": "Brief summary of last interaction"
+    },
+    "next_action": {
+      "type": "string",
+      "description": "Next step in the outreach sequence"
+    },
+    "next_action_date": {
+      "type": "date",
+      "format": "YYYY-MM-DD"
+    },
+    "campaign_tags": {
+      "type": "array",
+      "items": "string",
+      "description": "Which campaigns this outreach supports — e.g., ['cotrackpro', 'access-to-justice', 'access-to-safety']"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "csv_header": "legislator_name,chamber,district,party,committees,leadership_role,relevance_score,relevance_tags,priority_tier,pipeline_stage,capitol_office_room,capitol_phone,email,staff_contact_name,staff_contact_email,last_contact_date,last_contact_type,last_contact_notes,next_action,next_action_date,campaign_tags,notes",
+  "example_rows": [
+    {
+      "legislator_name": "Sen. Cindy O'Laughlin",
+      "chamber": "Senate",
+      "district": 18,
+      "party": "R",
+      "committees": ["Rules, Joint Rules, Resolutions and Ethics"],
+      "leadership_role": "President Pro Tem",
+      "relevance_score": 4,
+      "relevance_tags": ["leadership", "committee-appointments"],
+      "priority_tier": "Tier 1",
+      "pipeline_stage": 0,
+      "capitol_office_room": "",
+      "capitol_phone": "",
+      "email": "cindy.olaughlin@senate.mo.gov",
+      "staff_contact_name": "",
+      "staff_contact_email": "",
+      "last_contact_date": "",
+      "last_contact_type": "",
+      "last_contact_notes": "",
+      "next_action": "Research committee interests and recent bills",
+      "next_action_date": "",
+      "campaign_tags": ["cotrackpro"],
+      "notes": "As President Pro Tem, controls committee appointments. High-value relationship."
+    }
+  ],
+  "airtable_config": {
+    "base_name": "MO-Gov Advocacy Pipeline",
+    "table_name": "Legislators",
+    "views": [
+      {
+        "name": "Pipeline Board",
+        "type": "kanban",
+        "group_by": "pipeline_stage"
+      },
+      {
+        "name": "By Priority",
+        "type": "grid",
+        "sort": "priority_tier ASC, relevance_score DESC"
+      },
+      {
+        "name": "Follow-Up Due",
+        "type": "grid",
+        "filter": "next_action_date <= TODAY()",
+        "sort": "next_action_date ASC"
+      },
+      {
+        "name": "Senate Only",
+        "type": "grid",
+        "filter": "chamber = 'Senate'"
+      },
+      {
+        "name": "House Only",
+        "type": "grid",
+        "filter": "chamber = 'House'"
+      }
+    ]
+  }
+}
