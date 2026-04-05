@@ -7,6 +7,13 @@
 
 ## STEP 1: PRINT LETTERS (34 total)
 
+### EASIEST: Print `letters-route-order.md` straight through
+- [ ] Open `letters-route-order.md` — all 34 letters in delivery route order
+- [ ] Print all 34 pages — they come out 4th floor first, 3rd, then 2nd
+- [ ] Stack as-is — no sorting needed, matches your walking route exactly
+
+### OR print by tier (from individual files):
+
 ### Tier 1 — 9 letters (from `tier1-cover-letters.md`)
 - [ ] #1: Sen. Cindy O'Laughlin (Rm 326)
 - [ ] #2: Sen. Tony Luetkemeyer (Rm 332)
@@ -56,8 +63,10 @@
 
 ## STEP 4: PRINT SUPPORT MATERIALS
 
+- [ ] **Day-of card** — `day-of-card.md` (1 page, double-sided, clip to clipboard)
 - [ ] **Delivery route** — `delivery-route.md` (2 pages, double-sided)
-- [ ] **Talking points card** — `talking-points-card.md` (1 page, fold in half)
+- [ ] **Talking points card** — `talking-points-card.md` (1 page, fold in pocket)
+- [ ] **HB 2505 brief** — `hb2505-brief.md` (2 pages — bring if visiting before Apr 8)
 - [ ] **Delivery log** — from `drop-off-packet.md` (1 page, blank table)
 - [ ] **Business cards** — 68 minimum (2 per office x 34 offices)
 
@@ -117,11 +126,14 @@ For each of the 34 senators:
 
 | What to print | File | Pages |
 |---------------|------|-------|
-| Tier 1 letters | `tier1-cover-letters.md` | 9 |
-| Tier 2 letters | `tier2-cover-letters.md` | 8 |
-| Tier 3 letters | `advocacy-letter.md` (CoTrackPro variant) | 17 |
+| **ALL letters (route order)** | **`letters-route-order.md`** | **34** |
+| OR: Tier 1 letters | `tier1-cover-letters.md` | 9 |
+| OR: Tier 2 letters | `tier2-cover-letters.md` | 8 |
+| OR: Tier 3 letters | `tier3-cover-letters.md` | 17 |
 | One-pager | Canva export (PDF) | 34 copies |
 | Labels | `senate-mail-merge.csv` → Avery 5160 | 2 sheets |
+| Day-of card | `day-of-card.md` | 1 (double-sided) |
+| HB 2505 brief | `hb2505-brief.md` | 2 |
 | Delivery route | `delivery-route.md` | 2 |
 | Talking points | `talking-points-card.md` | 1 |
 | Delivery log | `drop-off-packet.md` (log section) | 1 |
