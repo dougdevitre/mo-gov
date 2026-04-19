@@ -17,6 +17,27 @@ A professional, non-partisan toolkit for orchestrating legislative engagement an
 
 ---
 
+## 2026 Session Dates
+
+- **Apr 15** — Last day for House consent bills on Senate calendar
+- **May 8** — Last day for floor action on appropriation bills
+- **May 15** — Last day of session
+- **Sep 16** — Veto session
+
+---
+
+## Workflow Automations
+
+Phrases that trigger end-to-end workflows when used in a Claude Code session (see `CLAUDE.md` for full routing):
+
+1. **"Generate letters for [target group]"** — Loads `personalization-map.md`, picks a variant from `campaign-letters.md`, fills `{{variables}}` from `mo-legislators.md`.
+2. **"Update pipeline after my visit"** — Writes to the Airtable `MO-Gov Legislators` table and generates Gmail drafts from `pipeline-emails.md`.
+3. **"Who should I contact next?"** — Queries Airtable by pipeline stage and `next_action_date`, prioritizing by tier.
+4. **"Prepare materials for [senator/committee/campaign]"** — Cross-references `senate-committees.md` + `personalization-map.md` to assemble a targeted packet.
+5. **"Track a bill"** — Appends to `bill-tracking.md` and cross-references `senate-committees.md`; see `bill-monitor-setup.md` for the daily monitor agent.
+
+---
+
 ## Modules
 
 | # | Module | File(s) | Description |
@@ -25,13 +46,13 @@ A professional, non-partisan toolkit for orchestrating legislative engagement an
 | 1 | Committee Intel | `mo-committees.md` | Committee-to-topic mapping, hearing schedules, tier rankings |
 | 2 | Advocacy Letter | `advocacy-letter.md` | 3 letter templates (standard, CoTrackPro, Access To) + tone checklist |
 | 3 | Address Labels | `address-labels.md` | Avery 5160 format, CSV mail merge schema, envelope layout |
-| 4 | Drop-Off Packet | `drop-off-packet.md` | Assembly checklist, delivery script, log template, follow-up workflow |
+| 4 | Drop-Off Packet | `drop-off-packet.md`, `print-checklist.md` | Assembly checklist, delivery script, log template, print QA before the trip |
 | 5 | Capitol Visit Planner | `SKILL.md` (Module 5) | Trip logistics, session calendar, day-of checklist |
 | 6 | Advocacy Pipeline | `outreach-pipeline.json` | 9-stage CRM schema with Airtable config and engagement tracking |
-| 7 | Policy Brief | `policy-brief.md` | One-pager templates + Missouri-specific data hooks for 7 campaigns |
+| 7 | Policy Brief | `policy-brief.md`, `hb2505-brief.md` | One-pager templates + worked HB 2505 example brief |
 | 8 | Testimony Prep | `SKILL.md` (Module 8) | Written/oral testimony format and tips |
-| 9 | Session Tracker | `SKILL.md` (Module 9) | 2026 session calendar + bill tracking resources |
-| 10 | Target Prioritization | `SKILL.md` (Module 10) | Scoring framework + tier-based outreach strategy |
+| 9 | Session Tracker | `SKILL.md` (Module 9), `bill-tracking.md`, `bill-monitor-setup.md` | 2026 session calendar, bill tracker, daily monitor agent setup |
+| 10 | Target Prioritization | `SKILL.md` (Module 10), `tier1-cover-letters.md`, `tier2-cover-letters.md`, `tier3-cover-letters.md` | Tier scoring framework + ready-to-print cover letters per tier |
 
 ---
 
@@ -52,12 +73,16 @@ mo-gov/
 ├── advocacy-letter.md        ← Letter templates with {{variable}} mail merge syntax
 ├── campaign-letters.md       ← 6 Access To campaign letter variants (Justice/Education/Health/Safety/Jobs/Housing)
 ├── tier1-cover-letters.md    ← 9 personalized Tier 1 senator letters, ready to print
+├── tier2-cover-letters.md    ← Tier 2 cover letters (mid-priority targets)
+├── tier3-cover-letters.md    ← Tier 3 cover letters (broad-mail targets)
 ├── policy-brief.md           ← One-pager templates for CoTrackPro + Access To campaigns
+├── hb2505-brief.md           ← Worked example: HB 2505 policy brief
 ├── address-labels.md         ← Avery 5160 labels + CSV schema + envelope format
 │
 │── TRIP PLANNING
 ├── delivery-route.md         ← Prioritized hit list with floor-by-floor walking route
 ├── drop-off-packet.md        ← Assembly checklist, delivery script, log template, follow-up
+├── print-checklist.md        ← Pre-trip print QA (paper, labels, packet counts)
 ├── talking-points-card.md    ← Pocket cheat sheet: 30-sec intro, stats, objection handling
 ├── calendar-events.md        ← Capitol visit + follow-up email/call schedule
 │
@@ -87,9 +112,30 @@ mo-gov/
 
 ---
 
-## Data Freshness
+## Connected Services
+
+This toolkit is designed to run inside a Claude Code session with MCP integrations wired up:
+
+| Service | Purpose | Details |
+|---------|---------|---------|
+| **Airtable** | Pipeline CRM | Base `app9ccLvnWmtnShhh`, table `tblgA1Thb3pIT2qld` ("MO-Gov Legislators") — 34 senator records with pipeline stages, engagement tracking, committee assignments |
+| **Gmail** | Follow-up emails | Tier 1 senator follow-up drafts staged in the Drafts folder, generated from `pipeline-emails.md` |
+| **Canva** | Visual collateral | 4 CoTrackPro one-pager designs saved to the account |
+| **Google Calendar** | Visit scheduling | *Read-only for now* — write access unavailable (see `calendar-events.md`); use the file as the source of truth |
+
+First-time setup: connect Airtable, Gmail, and Canva MCP servers in Claude Code, then run a `"Who should I contact next?"` prompt to verify access.
+
+---
+
+## Data Validation
 
 Legislator data can change during a session. Each reference file includes a `Last verified` date. Before printing labels or sending letters:
+
+```bash
+./validate-legislators.sh    # run before any mail campaign
+```
+
+This checks that all 34 districts are present, room numbers and phone formats are valid, and the CSV mail-merge file is intact. Then:
 
 1. Check the date at the top of `mo-legislators.md` and `mo-committees.md`
 2. Verify room numbers via the [Senate directory](https://senate.mo.gov/Senators/Directory) or [House roster](https://house.mo.gov/MemberRoster.aspx)
@@ -99,7 +145,7 @@ Legislator data can change during a session. Each reference file includes a `Las
 
 ## Compliance Note
 
-Missouri law (RSMo 105.470–105.482) requires registration as a legislative lobbyist if you are compensated to influence legislation. See the expanded compliance checklist in `SKILL.md` (Guardrails section). This toolkit provides educational information, not legal advice — consult legal counsel if your activities may require registration.
+Missouri law (RSMo 105.470–105.482) requires registration as a legislative lobbyist if you are compensated to influence legislation. See the expanded compliance checklist in `SKILL.md` (Guardrails section) and the full checklist in `CLAUDE.md`. This toolkit provides educational information, not legal advice — consult legal counsel if your activities may require registration.
 
 ---
 
